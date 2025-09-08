@@ -1,10 +1,9 @@
 #!/bin/bash
 ################################
 # Author: Abhishek
+
 # Version: v123
-#
-#
-#
+
 # This script will help users to communicate and retrieve information from GitHub
 # Usage:
 #   Please provide your github token and rest api to the script as input
@@ -17,7 +16,8 @@ if [ ${#@} -lt 2 ]; then
     exit 1;
 fi
 
-GITHUB_TOKEN=$3
+GITHUB_TOKEN=$2
+
 GITHUB_API_REST=$1
 
 GITHUB_API_HEADER_ACCEPT="Accept: application/vnd.github.v3+json"
